@@ -3,19 +3,23 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+
         Scanner text = new Scanner(System.in);
-        System.out.println("Введите текст : ");
+        System.out.println("Enter the text : ");
         String a = text.nextLine();
 
-        System.out.println("Введите слово, которое желаете вырезать : ");
-        String word = text.nextLine();
+        String substring = a.substring(0, 21);
+
+        System.out.println("Your text to upper case : " + a.toUpperCase());
+
+        System.out.println("Your string length : " + a.length());
+
+        System.out.println("Your first 20 symbols : " + substring + "...");
 
 
-        int start = a.indexOf(word);
-        String before = a.substring(0, start);
 
-        String after = a.substring(start + word.length());
-        String result = before + after;
-        System.out.println(result);
+
+
+
     }
 }
